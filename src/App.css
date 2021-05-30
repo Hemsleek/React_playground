@@ -1,1 +1,84 @@
 
+.App {
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  align-items: center;
+  background: #f3f3f3;
+}
+.title {
+  padding: 1rem 0;
+  font-size: 1.8rem;
+}
+.calender {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  background: #fafafa;
+  border-radius: 15px;
+  user-select: none;
+
+}
+.month-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.month-text {
+  text-align: center;
+  margin: 0 1.2rem;
+  font-size: 1.5rem;
+  width:8.7rem;
+}
+img {
+  cursor: pointer;
+}
+.right-arrow {
+  transform: rotate(180deg);
+}
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: space-between;
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid;
+  grid-column-gap: 1rem;
+}
+
+.day {
+  text-align: center;
+}
+.num-of-days {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding:1.5rem;
+  grid-row-gap: 1.6rem;
+  grid-column-gap: 1rem;
+}
+.num-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  cursor: pointer;
+  width:2rem;
+  height:2rem;
+
+}
+.num-item.selected {
+  background:rgba(0, 255, 0, 0.2);
+}
+.num-item.current-day{
+  background: rgba(0, 255, 0, 0.8)
+}
+img.unclickable {
+filter: invert(0.7);
+cursor:not-allowed;
+}
+
